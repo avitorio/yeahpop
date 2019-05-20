@@ -74,10 +74,6 @@ class Yeahpop_Public {
 
 		if (is_product()) {
 
-
-			$names = $this->get_random_names();
-			$cities = $this->get_random_cities();
-
 			// Get product
 			$product_id = get_the_ID();
 			$product = wc_get_product( $product_id );
@@ -126,34 +122,6 @@ class Yeahpop_Public {
 
 		}
 
-	}
-
-	public function get_random_names($length = 5) {
-		$names = array('Allison', 'Arthur', 'Ana', 'Alex', 'Arlene', 'Alberto', 'Barry', 'Bertha', 'Bill', 'Bonnie', 'Bret', 'Beryl', 'Chantal', 'Cristobal', 'Claudette', 'Charley', 'Cindy', 'Chris', 'Dean', 'Dolly', 'Danny', 'Danielle', 'Dennis', 'Debby', 'Erin', 'Edouard', 'Erika', 'Earl', 'Emily', 'Ernesto', 'Felix', 'Fay', 'Fabian', 'Frances', 'Franklin', 'Florence', 'Gabielle', 'Gustav', 'Grace', 'Gaston', 'Gert', 'Gordon', 'Humberto', 'Hanna', 'Henri', 'Hermine', 'Harvey', 'Helene', 'Iris', 'Isidore', 'Isabel', 'Ivan', 'Irene', 'Isaac', 'Jerry', 'Josephine', 'Juan', 'Jeanne', 'Jose', 'Joyce', 'Karen', 'Kyle', 'Kate', 'Karl', 'Katrina', 'Kirk', 'Lorenzo', 'Lili', 'Larry', 'Lisa', 'Lee', 'Leslie', 'Michelle', 'Marco', 'Mindy', 'Maria', 'Michael', 'Noel', 'Nana', 'Nicholas', 'Nicole', 'Nate', 'Nadine', 'Olga', 'Omar', 'Odette', 'Otto', 'Ophelia', 'Oscar', 'Pablo', 'Paloma', 'Peter', 'Paula', 'Philippe', 'Patty', 'Rebekah', 'Rene', 'Rose', 'Richard', 'Rita', 'Rafael', 'Sebastien', 'Sally', 'Sam', 'Shary', 'Stan', 'Sandy', 'Tanya', 'Teddy', 'Teresa', 'Tomas', 'Tammy', 'Tony', 'Van', 'Vicky', 'Victor', 'Virginie', 'Vince', 'Valerie', 'Wendy', 'Wilfred', 'Wanda', 'Walter', 'Wilma', 'William', 'Kumiko', 'Aki', 'Miharu', 'Chiaki', 'Michiyo', 'Itoe', 'Nanaho', 'Reina', 'Emi', 'Yumi', 'Ayumi', 'Kaori', 'Sayuri', 'Rie', 'Miyuki', 'Hitomi', 'Naoko', 'Miwa', 'Etsuko', 'Akane', 'Kazuko', 'Miyako', 'Youko', 'Sachiko', 'Mieko', 'Toshie', 'Junko');
-
-		$keys = array_rand( $names , $length);
-
-		$random_names = array();
-		for ($i = 0; $i < $length; $i++) {
-			$random_names[$i] = $names[$keys[$i]] . ' ' . chr(rand(65,90)) . '.';
-		}
-
-		return $random_names;
-	}
-
-	public function get_random_cities($length = 5) {
-		
-
-		$cities = array('New York, NY', 'Los Angeles, CA', 'Chicago, IL', 'Miami, FL', 'Dallas, TX', 'Philadelphia, PA', 'Houston, TX', 'Washington, DC', 'Atlanta, GA', 'Boston, MA', 'Phoenix, AZ', 'Seattle, WA', 'San Francisco, CA', 'Detroit, MI', 'San Diego, CA', 'Minneapolis, MN', 'Tampa, FL', 'Denver, CO', 'Brooklyn, NY', 'Queens, NY', 'Baltimore, MD', 'Riverside, CA', 'Saint Louis, MO', 'Las Vegas, NV', 'Portland, OR', 'San Antonio, TX', 'Sacramento, CA', 'San Jose, CA', 'Orlando, FL', 'Cleveland, OH', 'Pittsburgh, PA', 'Cincinnati, OH', 'Manhattan, NY', 'Austin, TX', 'Kansas City, MO', 'Indianapolis, IN', 'Columbus, OH', 'Virginia Beach, VA', 'Charlotte, NC', 'Bronx, NY', 'Milwaukee, WI', 'Providence, RI', 'Jacksonville, FL', 'Salt Lake City, UT', 'Nashville, TN', 'Memphis, TN', 'Richmond, VA', 'New Orleans, LA', 'Raleigh, NC', 'Louisville, KY', 'Oklahoma City, OK', 'Bridgeport, CT', 'Buffalo, NY', 'Hartford, CT', 'Fort Worth, TX', 'Tucson, AZ', 'El Paso, TX', 'Honolulu, HI', 'Omaha, NE', 'McAllen, TX', 'Albuquerque, NM', 'Birmingham, AL', 'Dayton, OH', 'Rochester, NY', 'Sarasota, FL', 'Fresno, CA', 'Allentown, PA', 'Tulsa, OK', 'Concord, CA', 'Cape Coral, FL', 'Springfield, MA', 'Colorado Springs, CO', 'Charleston, SC', 'Grand Rapids, MI', 'Mission Viejo, CA', 'Albany, NY', 'Knoxville, TN', 'Baton Rouge, LA', 'Bakersfield, CA', 'Ogden, UT', 'New Haven, CT', 'Columbia, SC', 'Akron, OH', 'Provo, UT', 'Worcester, MA', 'Mesa, AZ', 'Palm Bay, FL', 'Toledo, OH', 'Murrieta, CA', 'Wichita, KS', 'Des Moines, IA', 'Staten Island, NY', 'Long Beach, CA', 'Greenville, SC', 'Little Rock, AR', 'Harrisburg, PA', 'Denton, TX', 'Madison, WI', 'Reno, NV');
-
-		$keys = array_rand( $cities , $length);
-
-		$random_cities = array();
-		for ($i = 0; $i < $length; $i++) {
-			$random_cities[$i] = $cities[$keys[$i]];
-		}
-
-		return $random_cities;
 	}
 
 	public function retrieve_orders_data( $product_id ) {
