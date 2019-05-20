@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: avitorio
 Donate link: https://andrevitorio.com
 Tags: marketing, popup sales proof, recent sales notification
 Requires at least: 3.0.1
