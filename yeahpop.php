@@ -13,7 +13,7 @@
  * @package           Yeahpop
  *
  * @wordpress-plugin
- * Plugin Name:       YeahPop - Sales Notification Popups For Woocommerce
+ * Plugin Name:       YeahPop
  * Plugin URI:        https://yeahpress.com
  * Description:       Display Your Recent WooCommerce Sales To Increase Your Conversion Rate.
  * Version:           0.1

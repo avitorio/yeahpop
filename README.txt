@@ -1,9 +1,10 @@
-=== Plugin Name ===
+=== YeahPop - Sales Notification Popups For Woocommerce ===
 Contributors: avitorio
 Donate link: https://andrevitorio.com
 Tags: marketing, popup sales proof, recent sales notification, popup sales notification, popup sales
 Requires at least: 4.4
 Tested up to: 5.2
+Requires PHP: 5.6
 Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
