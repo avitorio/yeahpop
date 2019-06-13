@@ -24,6 +24,10 @@ Add small, non-intrusive popup notifications to your site in seconds.
 2. Activate the plugin through the 'Plugins' menu in wordpress
 3. Done!
 
+== Screenshots ==
+
+1. YeahPop shows your recent orders as a clean non-intrusive pop up.
+
 == Frequently Asked Questions ==
 
 = How many orders will Yeahpop show =
