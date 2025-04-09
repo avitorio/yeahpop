@@ -1,6 +1,12 @@
 {
   "title": "asd",
-  "slug": "asd",
   "type": "object",
-  "properties": {}
+  "properties": {
+    "category": {
+      "required": false,
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Category"
+    }
+  }
 }
